@@ -1,0 +1,41 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+// プレイヤーを制御するコンポーネント
+public class Player : MonoBehaviour
+{
+    public float m_speed; // 移動の速さ
+    public static Player m_instance;
+
+    // 毎フレーム呼び出される関数
+    private void Awake()
+    {
+        m_instance = this;
+        
+    }
+
+    private void Update()
+    {
+        // 矢印キーの入力情報を取得する
+        var h = Input.GetAxis("Horizontal");
+        var v = Input.GetAxis("Vertical");
+
+        // 矢印キーが押されている方向にプレイヤーを移動する
+        var velocity = new Vector3(h, v) * m_speed;
+        transform.localPosition += velocity;
+        transform.localPosition = idouseigen.ClampPosition(transform.localPosition);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // 弾と衝突した場合
+        if (collision.name.Contains("魚影小"))
+        {
+          
+         
+
+        }
+    }
+}
+
