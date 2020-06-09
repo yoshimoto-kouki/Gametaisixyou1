@@ -16,11 +16,11 @@ public class agebaidou : MonoBehaviour
     Transform myTransform = this.transform;
 
     Vector3 pos = myTransform.position;
-    pos.x += 0.005f;
+    pos.x += 0.0025f;
         myTransform.position = pos;
         if (Input.GetKeyDown(KeyCode.A))
         {
-            pos.x += -0.055f;
+            pos.x += -0.06f;
             myTransform.position = pos;
         }
     }
