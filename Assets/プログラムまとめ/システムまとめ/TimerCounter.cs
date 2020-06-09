@@ -13,10 +13,25 @@ public class TimerCounter : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (Collider2D.gameObject.name = "揚げ具合")
+    //    {
+    //        SceneManager.LoadScene("C");
+    //    }
+    //    if (Collider2D.gameObject.name = "揚げ具合orange")
+    //    {
+    //        SceneManager.LoadScene("B");
+    //    }
+    //    if (Collider2D.gameObject.name = "揚げ具合green")
+    //    {
+    //        SceneManager.LoadScene("A");
+    //    }
+    //    if (Collider2D.gameObject.name = "揚げ具合red")
+    //    {
+    //        SceneManager.LoadScene("C");
+    //    }
+    //}
     // Update is called once per frame
     void Update()
     {
