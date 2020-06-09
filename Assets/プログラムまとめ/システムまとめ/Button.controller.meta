@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/プログラムまとめ/システムまとめ/Button.controller.meta
 guid: 9525ada0e5c68c8428a9b2f62c74f61f
 NativeFormatImporter:
+=======
+guid: 57dc23ba162b3f54584d2736a95463fd
+folderAsset: yes
+DefaultImporter:
+>>>>>>> 1d273c1c893f87f371f9774b2b9ea258502c48e0:Assets/picture/gamePicture/age.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 
