@@ -7,31 +7,16 @@ using UnityEngine.SceneManagement;
 public class TimerCounter : MonoBehaviour
 {
     public Text timerText;
-
     public float totalTime;
     int seconds;
+    float hyouka;
 
+    void Start()
+    { 
+    }
 
     // Start is called before the first frame update
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (Collider2D.gameObject.name = "揚げ具合")
-    //    {
-    //        SceneManager.LoadScene("C");
-    //    }
-    //    if (Collider2D.gameObject.name = "揚げ具合orange")
-    //    {
-    //        SceneManager.LoadScene("B");
-    //    }
-    //    if (Collider2D.gameObject.name = "揚げ具合green")
-    //    {
-    //        SceneManager.LoadScene("A");
-    //    }
-    //    if (Collider2D.gameObject.name = "揚げ具合red")
-    //    {
-    //        SceneManager.LoadScene("C");
-    //    }
-    //}
+
     // Update is called once per frame
     void Update()
     {
@@ -39,8 +24,26 @@ public class TimerCounter : MonoBehaviour
         totalTime -= Time.deltaTime;
         seconds = (int)totalTime;
         timerText.text = seconds.ToString();
+
         if (totalTime <= 0f)
         {
+            hyouka = agebaidou.GetcurrentHP();
+            //if (hyouka >= 400 & hyouka <= 800)
+            //{
+            //    SceneManager.LoadScene("A");
+            //}
+            //else if (hyouka >= 100 & hyouka <= 399)
+            //{
+            //    SceneManager.LoadScene("B");
+            //}
+            //else if (hyouka >= 801 & hyouka <= 900)
+            //{
+            //    SceneManager.LoadScene("B");
+            //}
+            //else
+            //{
+            //    SceneManager.LoadScene("C");
+            //}
             SceneManager.LoadScene("End");
         }
     }
